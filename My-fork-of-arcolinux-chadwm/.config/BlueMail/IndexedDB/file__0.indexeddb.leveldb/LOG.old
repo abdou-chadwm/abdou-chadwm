@@ -1,0 +1,14 @@
+2025/09/17-20:04:17.578 4c57 Creating DB /home/abdou/.config/BlueMail/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2025/09/17-20:04:17.582 4c57 Reusing MANIFEST /home/abdou/.config/BlueMail/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2025/09/17-20:06:26.903 4c57 Level-0 table #5: started
+2025/09/17-20:06:26.937 4c57 Level-0 table #5: 1162877 bytes OK
+2025/09/17-20:06:26.941 4c57 Delete type=0 #3
+2025/09/17-20:39:19.945 4cba Level-0 table #7: started
+2025/09/17-20:39:19.983 4cba Level-0 table #7: 1115175 bytes OK
+2025/09/17-20:39:19.988 4cba Delete type=0 #4
+2025/09/17-20:41:20.472 4c57 Compacting 1@1 + 1@2 files
+2025/09/17-20:41:20.505 4c57 Generated table #8@1: 6716 keys, 556396 bytes
+2025/09/17-20:41:20.505 4c57 Compacted 1@1 + 1@2 files => 556396 bytes
+2025/09/17-20:41:20.506 4c57 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/17-20:41:20.507 4c57 Delete type=2 #5
+2025/09/17-20:41:20.507 4c57 Delete type=2 #7

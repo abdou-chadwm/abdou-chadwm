@@ -1,0 +1,21 @@
+{
+	"systemInfo": {
+		"platform": "linux",
+		"version": "6.16.7-2-cachyos",
+		"device_os": "rolling",
+		"device_model": "Satellite E45t-B",
+		"device_product": "Satellite E45t-B",
+		"manufacturer": "TOSHIBA",
+		"distro": "cachyos"
+	},
+	"auto_start_mode": "minimized",
+	"windowState": {
+		"isMaximized": false,
+		"isFullScreen": false,
+		"width": 1896,
+		"height": 1004,
+		"x": 10,
+		"y": 62
+	},
+	"alreadyExpanded": false
+}

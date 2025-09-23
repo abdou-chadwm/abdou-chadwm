@@ -1,0 +1,6 @@
+2025/09/18-18:41:57.194 30ed Reusing MANIFEST /home/abdou/.config/BlueMail/Local Storage/leveldb/MANIFEST-000001
+2025/09/18-18:41:57.194 30ed Recovering log #8
+2025/09/18-18:41:57.195 30ed Reusing old log /home/abdou/.config/BlueMail/Local Storage/leveldb/000008.log 
+2025/09/18-18:42:58.702 30ee Level-0 table #12: started
+2025/09/18-18:42:58.705 30ee Level-0 table #12: 26434 bytes OK
+2025/09/18-18:42:58.708 30ee Delete type=0 #8

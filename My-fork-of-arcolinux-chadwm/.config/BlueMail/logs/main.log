@@ -1,0 +1,60 @@
+[2025-09-17 20:04:12.394] [info]  [autoUpdateService] loaded...
+[2025-09-17 20:04:12.692] [silly] testing logs...
+[2025-09-17 20:04:12.720] [error] starting
+[2025-09-17 20:04:13.201] [info]  App is ready
+[2025-09-17 20:04:13.244] [info]  [ScheduledNotificationService] Initializing...
+[2025-09-17 20:04:13.245] [info]  [ScheduledNotificationService] Initialized with 0 notifications
+[2025-09-17 20:04:13.245] [error] [autoUpdateService] appReadyToShow false
+[2025-09-17 20:04:13.267] [verbose] web-contents-created
+[2025-09-17 20:04:13.278] [verbose] web-contents-created
+[2025-09-17 20:04:14.394] [debug] Browser window focus
+[2025-09-17 20:04:17.962] [error] Got an error! sid: undefined, build: undefined, ver: undefined
+[2025-09-17 20:04:17.963] [error] {
+  errorData: { message: 'Uncaught ReferenceError: module is not defined' }
+}
+[2025-09-17 20:04:18.019] [info]  [splash] didFinishLoadMain { isTimedOut: false }
+[2025-09-17 20:04:18.020] [info]  [splash] dataLoadedCallback 1
+[2025-09-17 20:04:19.021] [info]  [splash] dataLoadedCallback 2
+[2025-09-17 20:04:19.021] [info]  [splash] dataLoadedCallback 3
+[2025-09-17 20:04:19.022] [info]  [splash] dataLoadedCallback 4
+[2025-09-17 20:04:19.023] [error] An uncaught exception occurred in the main process: TypeError: Cannot read properties of undefined (reading 'isMaximized')
+    at BrowserWindow.<anonymous> (/opt/bluemail/resources/app.asar/services/windowState.js:107:38)
+    at BrowserWindow.emit (node:events:525:35)
+    at Timeout._onTimeout (/opt/bluemail/resources/app.asar/utils/splash/splash.js:81:18)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2025-09-17 20:04:19.112] [debug] Browser window blur
+[2025-09-17 20:04:19.116] [debug] Browser window focus
+[2025-09-17 20:04:19.621] [error] Main window finished loading all resources
+[2025-09-17 20:04:19.863] [error] Failed to load: ERR_FILE_NOT_FOUND (-6)
+[2025-09-17 20:05:19.558] [verbose] web-contents-created
+[2025-09-17 20:05:19.603] [debug] Browser window blur
+[2025-09-17 20:05:19.606] [debug] Browser window focus
+[2025-09-17 20:06:06.886] [debug] Browser window focus
+[2025-09-17 20:08:02.811] [error] Failed to load: ERR_FILE_NOT_FOUND (-6)
+[2025-09-17 20:10:29.222] [debug] Browser window blur
+[2025-09-18 18:41:56.786] [info]  [autoUpdateService] loaded...
+[2025-09-18 18:41:56.865] [silly] testing logs...
+[2025-09-18 18:41:56.894] [error] starting
+[2025-09-18 18:41:57.188] [info]  App is ready
+[2025-09-18 18:41:57.235] [info]  [ScheduledNotificationService] Initializing...
+[2025-09-18 18:41:57.236] [info]  [ScheduledNotificationService] Initialized with 0 notifications
+[2025-09-18 18:41:57.236] [error] [autoUpdateService] appReadyToShow false
+[2025-09-18 18:41:57.258] [verbose] web-contents-created
+[2025-09-18 18:41:57.270] [verbose] web-contents-created
+[2025-09-18 18:41:57.639] [debug] Browser window focus
+[2025-09-18 18:42:00.781] [error] Got an error! sid: 0aqeqqi6r5, build: 20465, ver: 1.140.102
+[2025-09-18 18:42:00.781] [error] {
+  errorData: { message: 'Uncaught ReferenceError: module is not defined' }
+}
+[2025-09-18 18:42:00.834] [info]  [splash] didFinishLoadMain { isTimedOut: false }
+[2025-09-18 18:42:00.834] [info]  [splash] dataLoadedCallback 1
+[2025-09-18 18:42:01.836] [info]  [splash] dataLoadedCallback 2
+[2025-09-18 18:42:01.836] [info]  [splash] dataLoadedCallback 3
+[2025-09-18 18:42:01.837] [info]  [splash] dataLoadedCallback 4
+[2025-09-18 18:42:01.838] [info]  [splash] dataLoadedCallback 5
+[2025-09-18 18:42:01.838] [info]  [splash] dataLoadedCallback 6
+[2025-09-18 18:42:01.861] [debug] Browser window blur
+[2025-09-18 18:42:01.863] [debug] Browser window focus
+[2025-09-18 18:42:02.481] [error] Main window finished loading all resources
+[2025-09-18 18:42:42.953] [debug] Browser window blur
