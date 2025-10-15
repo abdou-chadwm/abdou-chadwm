@@ -47,6 +47,15 @@ else
     echo "⚠️ fonts directory not found, skipping font install."
 fi
 
+echo "🔤 Moving fonts from .local/share/fonts to ~/.local/share/fonts..."
+if [ -d ~/abdou-chadwm/My-fork-of-arcolinux-chadwm/.local/share/fonts ]; then
+    mkdir -p ~/.local/share/fonts
+    rsync -a ~/abdou-chadwm/My-fork-of-arcolinux-chadwm/.local/share/fonts/ ~/.local/share/fonts/
+    fc-cache -fv
+else
+    echo "⚠️ .local/share/fonts directory not found, skipping font move."
+fi
+
 echo "🛠️ Building and installing chadwm..."
 if [ -d ~/.config/arco-chadwm/chadwm ]; then
     cd ~/.config/arco-chadwm/chadwm || exit 1
