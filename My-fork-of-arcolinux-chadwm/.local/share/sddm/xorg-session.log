@@ -1,0 +1,128 @@
+pgrep: pattern that searches for process name longer than 15 characters will result in zero matches
+Try `pgrep -f' option to match against the complete command line.
+/home/abdou/.config/arco-chadwm/scripts/run.sh: line 12: blueberry-tray: command not found
+pgrep: pattern that searches for process name longer than 15 characters will result in zero matches
+Try `pgrep -f' option to match against the complete command line.
+pkill: only one pattern can be provided
+Try `pkill --help' for more information.
+/home/abdou/.config/arco-chadwm/scripts/run.sh: line 49: runxautolock -time 10 -locker blurlock: command not found
+pgrep: unrecognized option '--restore'
+
+Usage:
+ pgrep [options] <pattern>
+
+Options:
+ -d, --delimiter <string>  specify output delimiter
+ -l, --list-name           list PID and process name
+ -a, --list-full           list PID and full command line
+ -v, --inverse             negates the matching
+ -w, --lightweight         list all TID
+ -c, --count               count of matching processes
+ -f, --full                use full process name to match
+ -g, --pgroup <PGID,...>   match listed process group IDs
+ -G, --group <GID,...>     match real group IDs
+ -i, --ignore-case         match case insensitively
+ -n, --newest              select most recently started
+ -o, --oldest              select least recently started
+ -O, --older <seconds>     select where older than seconds
+ -P, --parent <PPID,...>   match only child processes of the given parent
+ -s, --session <SID,...>   match session IDs
+     --signal <sig>        signal to send (either number or name)
+ -t, --terminal <tty,...>  match by controlling terminal
+ -u, --euid <ID,...>       match by effective IDs
+ -U, --uid <ID,...>        match by real IDs
+ -x, --exact               match exactly with the command name
+ -F, --pidfile <file>      read PIDs from file
+ -L, --logpidfile          fail if PID file is not locked
+ -r, --runstates <state>   match runstates [D,S,Z,...]
+ -A, --ignore-ancestors    exclude our ancestors from results
+ --cgroup <grp,...>        match by cgroup v2 names
+ --ns <PID>                match the processes that belong to the same
+                           namespace as <pid>
+ --nslist <ns,...>         list which namespaces will be considered for
+                           the --ns option.
+                           Available namespaces: ipc, mnt, net, pid, user, uts
+  --env <name=val,...>     match on environment variable
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see pgrep(1).
+pgrep: only one pattern can be provided
+Try `pgrep --help' for more information.
+Hotkey interference found and may not be matched: 'super + shift + p' (from 'super + shift + p').
+conky: desktop window (0x409) is root window
+conky: window type - override
+conky: drawing to created window (0xc00002)
+conky: drawing to double buffer
+conky: forked to background, pid is 1014
+
+conky: FOUND: x11
+conky: FOUND: file
+conky: FOUND: ncurses
+conky: FOUND: console
+conky: 'unknown' x11 session running
+WARNING: Could not find theme AdwaitaLegacy
+
+(nitrogen:995): GLib-GObject-CRITICAL **: 18:35:21.426: Attempting to freeze the notification queue for object GtkSettings[0x55a85028cda0]; Property notification does not work during instance finalization.
+
+(nitrogen:995): GLib-GObject-CRITICAL **: 18:35:21.427: Attempting to thaw the notification queue for object GtkSettings[0x55a85028cda0]; Property notification does not work during instance finalization.
+
+(xfce4-power-manager:982): xfce4-power-manager-WARNING **: 18:35:21.915: Unable to connect to session manager : Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: GFileInfo created without standard::edit-name
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: file ../gio/gfileinfo.c: line 1757 (g_file_info_get_edit_name): should not be reached
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: GFileInfo created without standard::size
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: file ../gio/gfileinfo.c: line 1860 (g_file_info_get_size): should not be reached
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: GFileInfo created without standard::content-type
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: file ../gio/gfileinfo.c: line 1836 (g_file_info_get_content_type): should not be reached
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: GFileInfo created without standard::is-symlink
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: file ../gio/gfileinfo.c: line 1691 (g_file_info_get_is_symlink): should not be reached
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: GFileInfo created without standard::is-backup
+
+(pcmanfm:1818): GLib-GIO-CRITICAL **: 18:36:30.824: file ../gio/gfileinfo.c: line 1669 (g_file_info_get_is_backup): should not be reached
+
+(pcmanfm:1818): Gtk-WARNING **: 18:36:30.826: Theme parsing error: <data>:2:27: The style property GtkWidget:focus-padding is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(pcmanfm:1818): Gtk-WARNING **: 18:36:30.826: Theme parsing error: <data>:3:30: The style property GtkWidget:focus-line-width is deprecated and shouldn't be used anymore. It will be removed in a future version
+
+(pcmanfm:1818): Gtk-WARNING **: 18:46:21.495: gtk_menu_detach(): menu is not attached
+
+(pcmanfm:1818): Gtk-WARNING **: 18:46:32.047: gtk_menu_detach(): menu is not attached
+[6995:6995:0319/184634.208517:ERROR:chrome/browser/policy/browser_dm_token_storage_linux.cc:118] Error: /etc/machine-id contains 0 characters (32 were expected).
+[6995:7019:0319/184634.495933:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:7019:0319/184634.528421:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:7019:0319/184634.597553:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[7039:7039:0319/184634.676755:ERROR:media/gpu/vaapi/vaapi_wrapper.cc:1627] vaInitialize failed: unknown libva error
+[6995:7019:0319/184634.741992:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:6995:0319/184634.789343:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:6995:0319/184634.790205:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:7019:0319/184634.791213:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:6995:0319/184634.801717:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:6995:0319/184634.957876:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:7019:0319/184634.960632:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:6995:0319/184634.964686:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:6995:0319/184635.044210:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:7019:0319/184635.044501:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:6995:0319/184635.127094:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:7019:0319/184635.127842:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[6995:6995:0319/184635.176149:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:7019:0319/184635.176277:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:6995:0319/184635.205677:ERROR:dbus/object_proxy.cc:573] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[6995:7019:0319/184636.754173:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:7019:0319/184636.754207:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[6995:7021:0319/184637.724064:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[6995:6995:0319/184640.682976:ERROR:mojo/public/cpp/bindings/lib/interface_endpoint_client.cc:732] Message 0 rejected by interface blink.mojom.WidgetHost
+[6995:7021:0319/184658.117978:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[6995:7021:0319/184741.732691:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[6995:7021:0319/184919.462651:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT
+[6995:7021:0319/185209.917256:ERROR:google_apis/gcm/engine/registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT

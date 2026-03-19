@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/abdou/Downloads/voidcraft_2025-07-06.tar.gz" added="2026-03-14T19:08:59.041861Z" modified="2026-03-14T19:09:06.473625Z" visited="2026-03-14T19:08:59.041862Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2026-03-14T19:08:59.041864Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2026-03-14T19:09:06.473623Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/abdou-chadwm/install_abdou_chadwm_voidlinux.sh" added="2026-03-15T20:29:33.053154Z" modified="2026-03-15T20:29:33.671190Z" visited="2026-03-15T20:29:33.053155Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-03-15T20:29:33.053156Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-15T20:29:33.671188Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/vpsm/vpsm" added="2026-03-15T21:11:42.024464Z" modified="2026-03-18T22:00:47.164616Z" visited="2026-03-15T21:11:42.024465Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:47.164612Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/Documents/my-paystub-3.pdf" added="2026-03-16T21:29:47.163507Z" modified="2026-03-17T21:07:04.658820Z" visited="2026-03-16T21:29:47.163508Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="simple-scan" exec="&apos;simple-scan %u&apos;" modified="2026-03-17T21:04:52.002974Z" count="2"/>
+          <bookmark:application name="atril" exec="&apos;atril %u&apos;" modified="2026-03-17T21:04:57.944301Z" count="2"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2026-03-17T21:07:04.658810Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/Documents/Fatima-bank-statement-2.pdf" added="2026-03-16T21:37:04.965194Z" modified="2026-03-16T21:40:57.503469Z" visited="2026-03-16T21:37:04.965196Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="simple-scan" exec="&apos;simple-scan %u&apos;" modified="2026-03-16T21:37:04.965200Z" count="1"/>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2026-03-16T21:40:57.503461Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/abdou/0866-5903/Downloads/my-paystub-2.pdf" added="2026-03-16T21:49:21.243647Z" modified="2026-03-16T21:49:21.243652Z" visited="2026-03-16T21:49:21.243648Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="atril" exec="&apos;atril %u&apos;" modified="2026-03-16T21:49:21.243649Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///run/media/abdou/0866-5903/Downloads/My-paystub-1.pdf" added="2026-03-16T21:49:32.088151Z" modified="2026-03-16T21:49:32.088163Z" visited="2026-03-16T21:49:32.088153Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="atril" exec="&apos;atril %u&apos;" modified="2026-03-16T21:49:32.088157Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/bspwm/scripts/rofi_powermenu" added="2026-03-16T21:59:37.173246Z" modified="2026-03-17T00:40:40.042138Z" visited="2026-03-16T21:59:37.173247Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-17T00:40:40.042137Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/Downloads/config.jsonc" added="2026-03-16T22:16:46.703443Z" modified="2026-03-16T22:20:56.231305Z" visited="2026-03-16T22:16:46.703445Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2026-03-16T22:20:56.231296Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/arco-chadwm/scripts/bar.sh" added="2026-03-17T00:38:13.604445Z" modified="2026-03-18T22:00:54.137540Z" visited="2026-03-17T00:38:13.604446Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:54.137537Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/bspwm/scripts/HideBar" added="2026-03-17T00:42:27.591339Z" modified="2026-03-17T00:42:27.591344Z" visited="2026-03-17T00:42:27.591340Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-17T00:42:27.591342Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/Downloads/Document.PDF" added="2026-03-17T21:00:34.342275Z" modified="2026-03-17T21:00:34.342290Z" visited="2026-03-17T21:00:34.342277Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome-stable" exec="&apos;google-chrome-stable %u&apos;" modified="2026-03-17T21:00:34.342282Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/bspwm/themes/onedark/polybar/modules.ini" added="2026-03-17T21:13:46.399295Z" modified="2026-03-17T21:13:46.399299Z" visited="2026-03-17T21:13:46.399295Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-17T21:13:46.399297Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/wallpapers" added="2026-03-18T21:21:33.648701Z" modified="2026-03-18T21:21:33.648712Z" visited="2026-03-18T21:21:33.648704Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="nitrogen" exec="&apos;nitrogen %u&apos;" modified="2026-03-18T21:21:33.648706Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/scripts/vsp2" added="2026-03-18T21:27:08.178598Z" modified="2026-03-18T21:27:08.178602Z" visited="2026-03-18T21:27:08.178599Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T21:27:08.178601Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/scripts/dmenu/edit_configs.sh" added="2026-03-18T21:40:16.360725Z" modified="2026-03-18T21:40:16.360729Z" visited="2026-03-18T21:40:16.360725Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T21:40:16.360727Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/scripts/dmenu/herbst-logout.sh" added="2026-03-18T21:40:34.992770Z" modified="2026-03-18T21:40:34.992789Z" visited="2026-03-18T21:40:34.992773Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T21:40:34.992781Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/fish/config.fish" added="2026-03-18T22:00:43.782602Z" modified="2026-03-18T22:00:43.782614Z" visited="2026-03-18T22:00:43.782603Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:43.782607Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/bspwm/scripts/bspvolume" added="2026-03-18T22:00:51.634681Z" modified="2026-03-18T22:00:51.634693Z" visited="2026-03-18T22:00:51.634683Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:51.634688Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/bspwm/scripts/Volume" added="2026-03-18T22:00:55.503185Z" modified="2026-03-18T22:00:55.503202Z" visited="2026-03-18T22:00:55.503188Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:55.503196Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/arco-chadwm/sxhkd/sxhkdrc" added="2026-03-18T22:00:57.116786Z" modified="2026-03-18T22:00:57.116812Z" visited="2026-03-18T22:00:57.116790Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:57.116800Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/arco-chadwm/chadwm/config.def.h" added="2026-03-18T22:00:58.449333Z" modified="2026-03-18T22:00:58.449351Z" visited="2026-03-18T22:00:58.449335Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-c++src"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-18T22:00:58.449340Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/.config/arco-chadwm/conky/system-overview" added="2026-03-19T21:12:28.763824Z" modified="2026-03-19T21:12:28.763829Z" visited="2026-03-19T21:12:28.763825Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-19T21:12:28.763827Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/abdou/abdou-chadwm/push-to-github.sh" added="2026-03-19T22:08:29.307066Z" modified="2026-03-19T22:49:27.195677Z" visited="2026-03-19T22:08:29.307066Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2026-03-19T22:49:27.195653Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

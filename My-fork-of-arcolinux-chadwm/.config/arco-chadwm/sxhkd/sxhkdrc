@@ -58,9 +58,9 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#Geany
 super + e
-    atom
+    geany
 
 #Browser
 super + w
@@ -72,7 +72,7 @@ super + t
 
 #archlinux-logout
 super + x
-     archlinux-logout
+     /home/abdou/.config/bspwm/scripts/rofi_powermenu
 
 #powermenu
 super + shift + x
@@ -115,9 +115,17 @@ super + KP_Enter
 # SUPER + SHIFT KEYS
 #################################################################
 
-#File-Manager
-super + shift + Return
-	thunar
+#void-packages
+super + shift + p
+	alacritty -e bash /home/abdou/scripts/vsp2
+
+# Vpm Xbps Helper
+super + shift + v
+	alacritty -e fish -c "/usr/bin/vpm; exec fish"
+
+# VSV Services Helper
+super + ctrl + s
+	alacritty -e fish -c "/usr/bin/vsv; exec fish"
 
 #Keyboard dependent
 #File-Manager
@@ -140,7 +148,9 @@ super + d
 super + shift + s
 	pkill -USR1 -x sxhkd
 
-
+# sxhkdrc
+super + shift + u
+    alacritty -e sudo xbps-install -Su
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################

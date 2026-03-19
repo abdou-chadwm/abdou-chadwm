@@ -32,14 +32,18 @@ function run {
 #autorandr horizontal
 #run "autorandr horizontal"
 #run "nm-applet"
-#run "pamac-tray"
-#run "variety"
+udiskie &
 dunst &
 run "xfce4-power-manager"
 run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
-run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+/usr/libexec/polkit-gnome-authentication-agent-1 &
 picom -b  --config ~/.config/arco-chadwm/picom/picom.conf &
+# Clean up any crashed audio sessions first
+pkill -9 pipewire wireplumber pipewire-pulse
+# Start PulseAudio
+pkill pulseaudio
+pulseaudio --start &
 #picom &
 #run "numlockx on"
 run"xautolock -time 10 -locker blurlock"
@@ -74,4 +78,4 @@ run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
 
 pkill bar.sh
 ~/.config/arco-chadwm/scripts/bar.sh &
-while type chadwm >/dev/null; do chadwm && continue || break; done
+while type chadwm >/dev/null; do dbus-run-session -- chadwm && continue || break; done

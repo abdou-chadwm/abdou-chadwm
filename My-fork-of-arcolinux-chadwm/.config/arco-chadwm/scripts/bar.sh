@@ -10,55 +10,71 @@ interval=0
 
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
-
-  printf "^c$white^  ^b$black^ CPU"
-  printf "^c$white^ ^b$black^ $cpu_val"
+  printf "^c$white^  ^b$black^ CPU ^c$white^^b$black^$cpu_val"
 }
 
 pkg_updates() {
-  #updates=$({ timeout 20 doas xbps-install -un 2>/dev/null || true; } | wc -l) # void
-  updates=$({ timeout 20 checkupdates 2>/dev/null || true; } | wc -l) # arch
-  # updates=$({ timeout 20 aptitude search '~U' 2>/dev/null || true; } | wc -l)  # apt (ubuntu, debian etc)
-
-  if [ -z "$updates" ]; then
-    printf "  ^c$green^     Fully Updated"
+  updates=$(xbps-install -un 2>/dev/null | wc -l)
+  if [ "$updates" -gt 0 ]; then
+    printf "^c$green^ 󰅢 ^c$white^$updates updates"
   else
-    printf "  ^c$green^     $updates"" updates"
+    printf "^c$green^ 󰅢 ^c$white^Updated"
   fi
 }
 
+# --- NEW VOLUME FUNCTION ---
+vol() {
+  # Check if muted first
+  if [ "$(pamixer --get-mute)" = "true" ]; then
+    printf "^c$red^ 󰝟 ^c$red^Muted"
+  else
+    # Get the raw number (e.g., 50)
+    vol_num=$(pamixer --get-volume)
+    printf "^c$green^ 󰕾 ^c$white^${vol_num}%%"
+  fi
+}
 battery() {
-  get_capacity="$(cat /sys/class/power_supply/BAT1/capacity)"
-  printf "^c$blue^   $get_capacity"
+  bat_path=$(ls -d /sys/class/power_supply/BAT* 2>/dev/null | head -n 1)
+  if [ -n "$bat_path" ]; then
+    capacity=$(cat "$bat_path/capacity" 2>/dev/null)
+    status=$(cat "$bat_path/status" 2>/dev/null)
+    [ "$status" = "Charging" ] && icon="󰂄" || icon=""
+    printf "^c$blue^ $icon $capacity%%"
+  else
+    printf "^c$blue^  No Bat"
+  fi
 }
 
 brightness() {
-  printf "^c$red^   "
-  printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
+  backlight_val=$(cat /sys/class/backlight/*/brightness | head -n 1)
+  printf "^c$red^  ^c$red^$backlight_val"
 }
 
 mem() {
-  printf "^c$blue^^b$black^  "
-  printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
+  printf "^c$blue^^b$black^  ^c$blue^$(free -m | awk '/^Mem/ { print $3 }')MB"
 }
 
 wlan() {
-	case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
-	up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Connected" ;;
-	down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Disconnected" ;;
-	esac
+  case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
+    up) printf "^c$black^ ^b$blue^ 󰤨 ^d^%s" " ^c$blue^Connected" ;;
+    down) printf "^c$black^ ^b$blue^ 󰤭 ^d^%s" " ^c$blue^Disconnected" ;;
+  esac
 }
 
 clock() {
-	#printf "^c$black^ ^b$darkblue^ 󱑆 "
-	printf "^c$black^^b$blue^ $(date '+%d/%m/%y %H:%M')  "
+    printf "^c$black^^b$blue^ $(date '+%d/%m/%y %I:%M %p') "
 }
 
 while true; do
-
-  [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
+  if [ $interval = 0 ] || [ $((interval % 600)) = 0 ]; then
+    updates=$(pkg_updates)
+    interval=0
+  fi
+  
   interval=$((interval + 1))
 
-#  sleep 3 && xsetroot -name "$updates $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock)"
-  sleep 3 && xsetroot -name "$updates  $(battery) $(brightness) $(cpu) $(mem) $(wlan) $(clock)"
+  # Added $(vol) to the root name string
+  xsetroot -name "$updates  $(vol)  $(battery)  $(brightness)  $(cpu)$(mem)  $(wlan)  $(clock)"
+  
+  sleep 3
 done
