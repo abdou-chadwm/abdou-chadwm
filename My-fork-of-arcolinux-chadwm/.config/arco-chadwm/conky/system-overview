@@ -145,7 +145,8 @@ ${color1}Super+G${alignr}${color2}Text Editor${color}
 ${color1}Super+Space${alignr}${color2}Change Layout${color}
 ${color1}Super+Shift+P${alignr}${color2}Void Packages${color}
 ${color1}Super+Shift+V${alignr}${color2}Vpm Xbps Helper${color}
-${color1}Super+Shift+V${alignr}${color2}Vsv Services Helper${color}
+${color1}Super+Ctrl+S${alignr}${color2}Vsv Services Helper${color}
+${color1}Super+Shift+M${alignr}${color2}Void-Cleaner${color}
 ${color1}PrtSc${alignr}${color2}Screenshot${color}
 ${color1}Super+Shift+R${alignr}${color2}Restart${color}
 ${color1}${hr}${color}

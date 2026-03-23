@@ -114,7 +114,8 @@ super + KP_Enter
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
-
+super + shift + m
+    alacritty -e bash -c "sudo /home/abdou/void-clean.sh; read -p 'Press enter to close...'"
 #void-packages
 super + shift + p
 	alacritty -e bash /home/abdou/scripts/vsp2
@@ -338,7 +339,7 @@ Print
     scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 
 #screeenshooter
-ctrl + Print
+super + Print
      xfce4-screenshooter
 
 #Gnome-Screenshot
