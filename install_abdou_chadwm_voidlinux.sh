@@ -11,25 +11,42 @@ fi
 TARGET_USER="${SUDO_USER:-root}"
 TARGET_HOME="$(eval echo "~${TARGET_USER}")"
 
-# Source project and destination paths (adjust if needed)
+# Define repository URL (Update this with your actual Git URL)
+REPO_URL="https://github.com/YOUR_USERNAME/My-fork-of-arcolinux-chadwm.git"
+
+# Source project and destination paths
 SRC_DIR="${TARGET_HOME}/abdou-chadwm/My-fork-of-arcolinux-chadwm"
 CONFIG_DIR="${TARGET_HOME}/.config"
 FONT_DIR="${TARGET_HOME}/.local/share/fonts"
 
-# Ensure required system tools are present or install them
+# Ensure required system tools and development headers are present
 echo "🔧 Installing required packages..."
 xbps-install -Suy
-xbps-install -y base-devel dash xprop acpi libXft imlib2 libXinerama pamixer brightnessctl conky nitrogen pcmanfm geany rsync fontconfig || {
+xbps-install -y base-devel dash xprop acpi libX11-devel libXft-devel imlib2-devel libXinerama-devel pamixer brightnessctl conky nitrogen pcmanfm geany rsync fontconfig git || {
   echo "❌ Package installation failed."
   exit 1
 }
+
+# Clone the repository if it doesn't exist yet
+echo "🌐 Checking for source repository..."
+if [ ! -d "$SRC_DIR" ]; then
+  echo "   Cloning into $SRC_DIR..."
+  sudo -u "$TARGET_USER" mkdir -p "$(dirname "$SRC_DIR")"
+  sudo -u "$TARGET_USER" git clone "$REPO_URL" "$SRC_DIR" || {
+    echo "❌ Git clone failed. Please check the REPO_URL."
+    exit 1
+  }
+else
+  echo "   Repository already exists. Pulling latest changes..."
+  sudo -u "$TARGET_USER" git -C "$SRC_DIR" pull || echo "⚠️ Could not pull latest changes, continuing anyway."
+fi
 
 # Enable safe globbing so empty globs vanish
 shopt -s nullglob dotglob
 
 echo "📁 Syncing .config directories..."
 if [ -d "$SRC_DIR/.config" ]; then
-  mkdir -p "$CONFIG_DIR"
+  sudo -u "$TARGET_USER" mkdir -p "$CONFIG_DIR"
   for dir in "$SRC_DIR/.config/"*; do
     if [ -d "$dir" ]; then
       rsync -a --delete "$dir/" "$CONFIG_DIR/$(basename "$dir")/"
@@ -67,7 +84,7 @@ else
 fi
 
 echo "🔤 Installing fonts and updating font cache..."
-mkdir -p "$FONT_DIR"
+sudo -u "$TARGET_USER" mkdir -p "$FONT_DIR"
 if [ -d "$SRC_DIR/fonts" ]; then
   rsync -a "$SRC_DIR/fonts/" "$FONT_DIR/"
 fi
@@ -76,16 +93,18 @@ if [ -d "$SRC_DIR/.local/share/fonts" ]; then
 fi
 if compgen -G "$FONT_DIR/*" > /dev/null; then
   chown -R "$TARGET_USER":"$TARGET_USER" "$FONT_DIR"
-  fc-cache -fv || echo "⚠️ fc-cache failed or not available."
+  sudo -u "$TARGET_USER" fc-cache -fv || echo "⚠️ fc-cache failed or not available."
 else
   echo "⚠️ No fonts copied, skipping fc-cache."
 fi
 
-echo "🛠️ Building and installing chadwm (if source present)..."
+echo "🛠️ Building and installing chadwm..."
 if [ -d "${CONFIG_DIR}/arco-chadwm/chadwm" ]; then
   pushd "${CONFIG_DIR}/arco-chadwm/chadwm" >/dev/null
   if command -v make >/dev/null 2>&1; then
-    make install
+    make clean   # Clean any old builds first
+    make install # Install as root
+    make clean   # Clean up root-owned object files so the user can recompile later
   else
     echo "❌ 'make' command not found. Please ensure base-devel is installed."
   fi
