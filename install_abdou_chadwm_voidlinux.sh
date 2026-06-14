@@ -22,7 +22,7 @@ FONT_DIR="${TARGET_HOME}/.local/share/fonts"
 # Ensure required system tools and development headers are present
 echo "🔧 Installing required packages..."
 xbps-install -Suy
-xbps-install -y base-devel dash xprop acpi libX11-devel libXft-devel imlib2-devel libXinerama-devel pamixer brightnessctl conky nitrogen pcmanfm geany rsync fontconfig git || {
+xbps-install -y base-devel dash xprop acpi libX11-devel libXft-devel imlib2-devel libXinerama-devel pamixer brightnessctl conky nitrogen pcmanfm geany sxhkd arandr nitrogen rsync fontconfig git || {
   echo "❌ Package installation failed."
   exit 1
 }
