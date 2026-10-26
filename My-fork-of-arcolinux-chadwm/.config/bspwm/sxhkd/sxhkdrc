@@ -1,0 +1,256 @@
+# === LAUNCH ===
+
+# Launch Rofi Application Menu
+super + space
+	rofi -show drun -modi drun -line-padding 4 -hide-scrollbar -show-icons -theme ~/.config/bspwm/rofi/config.rasi
+
+# Launch Terminal (kitty)
+super + Return
+	kitty
+
+# Toggle Scratchpad Terminal
+super + shift + Return
+	~/.config/bspwm/scripts/scratchpad
+
+# Launch Browser (Firefox-esr)
+super + b
+	firefox-esr
+
+# Launch Private Browser (Firefox private window)
+super + shift + b
+	firefox-esr -private-window
+
+# Helium browser
+super + c
+	helium
+
+# Helium browser (incognito)
+super + shift + c
+	helium --incognito
+
+# Show Keybinding Help Script
+super + slash
+	~/.config/bspwm/scripts/help
+
+# Wallpaper picker (re-themes desktop from the image)
+super + shift + t
+	qs -p ~/.config/bspwm/quickshell ipc call wallpapers toggle
+
+# Command Menu (bar popup of shell actions)
+super + shift + m
+	qs -p ~/.config/bspwm/quickshell ipc call commands toggle
+
+# Network app
+super + n
+	~/.config/bspwm/scripts/network
+
+# Launch File Manager (Thunar)
+super + f
+	thunar
+
+# Launch Geany (Text Editor)
+super + e
+	geany
+
+# Launch GIMP (Image Editor)
+super + g
+	gimp
+
+# Launch Discord
+super + d
+	Discord
+
+# Launch OBS (Screen Recording/Streaming)
+super + o
+	obs
+
+# === WINDOW STATE ===
+
+# ~ quoted: sxhkd runs binds through $SHELL, and zsh errors on unquoted ~word
+# Set Window State: Floating Mode
+super + shift + space
+	bspc node -t '~floating'
+
+# Set Window State: Fullscreen Mode
+super + shift + f
+	bspc node -t '~fullscreen'
+
+# Cycle layouts (scripts/layout)
+super + t
+	~/.config/bspwm/scripts/layout next
+
+# Create tab container or attach window to tabs (bspwm-tabs)
+super + w
+	~/.config/bspwm/bspwm-tabs/bspwm-tabs attach
+
+# Detach window from tab container
+super + shift + w
+	~/.config/bspwm/bspwm-tabs/bspwm-tabs detach
+
+# Scratchpad slots 1-3: add focused window if slot empty, else toggle visibility
+super + alt + {1,2,3}
+	~/.config/bspwm/scripts/scratchpad-promote auto {1,2,3}
+
+# Scratchpad slots 1-3: release (window stays visible, slot freed)
+super + alt + shift + {1,2,3}
+	~/.config/bspwm/scripts/scratchpad-promote release {1,2,3}
+
+# Named scratchpad: audio (pulsemixer or any mixer/music app)
+super + alt + a
+	~/.config/bspwm/scripts/scratchpad-promote auto audio
+
+# Named scratchpad: notes (any text editor or notes window)
+super + alt + n
+	~/.config/bspwm/scripts/scratchpad-promote auto notes
+
+# === WM CONTROL ===
+
+# Reload sxhkd (Hotkey Daemon)
+super + Escape
+	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# Reload bspwm (Window Manager)
+super + shift + r
+	bspc wm -r; notify-send 'bspwm' 'Restarted'
+
+# Restart the quickshell bar (recovery; super+shift+r restarts bspwm)
+super + ctrl + r
+	~/.config/bspwm/scripts/bar restart
+
+# Quit bspwm (Exit Window Manager)
+super + shift + q
+	bspc quit
+
+# Close Focused Window
+super + q
+	bspc node -c
+
+# Shutdown or Reboot
+super + x
+	~/.config/bspwm/scripts/power
+
+# === WINDOW NAVIGATION ===
+
+# Rotate focused window's pair 90° clockwise
+super + i
+	bspc node @parent -R 90
+
+# Rotate focused window's pair 90° counterclockwise
+super + shift + i
+	bspc node @parent -R -90
+
+# Change Focus to Left Window
+super + {Left,h}
+	bspc node -f west
+
+# Change Focus to Window Below
+super + {Down,j}
+	bspc node -f south
+
+# Change Focus to Window Above
+super + {Up,k}
+	bspc node -f north
+
+# Change Focus to Right Window
+super + {Right,l}
+	bspc node -f east
+
+# Swap Focused Window with Left Window
+super + shift + {Left,h}
+	bspc node -s west
+
+# Swap Focused Window with Window Below
+super + shift + {Down,j}
+	bspc node -s south
+
+# Swap Focused Window with Window Above
+super + shift + {Up,k}
+	bspc node -s north
+
+# Swap Focused Window with Right Window
+super + shift + {Right,l}
+	bspc node -s east
+
+# === WORKSPACES ===
+
+# Switch to Workspace 1-10
+super + {1-9,0}
+	bspc desktop --focus ^{1-9,10}
+
+# Switch to Workspace 11-12
+super + {minus,equal}
+	bspc desktop --focus ^{11,12}
+
+# Move Focused Window to Workspace 1-10
+super + shift + {1-9,0}
+	bspc node --to-desktop ^{1-9,10}
+
+# Move Focused Window to Workspace 11-12
+super + shift + {minus,equal}
+	bspc node --to-desktop ^{11,12}
+
+# === WINDOW RESIZE ===
+
+# Resize: shrink width (falls back to the opposite edge at screen borders)
+super + ctrl + {Left,h}
+	bspc node -z right -40 0 || bspc node -z left 40 0
+
+# Resize: expand width
+super + ctrl + {Right,l}
+	bspc node -z right 40 0 || bspc node -z left -40 0
+
+# Resize: expand height
+super + ctrl + {Down,j}
+	bspc node -z bottom 0 40 || bspc node -z top 0 40
+
+# Resize: shrink height
+super + ctrl + {Up,k}
+	bspc node -z bottom 0 -40 || bspc node -z top 0 -40
+
+# Resize All Windows Equally
+super + ctrl + equal
+	bspc node @/ -B
+
+# === MEDIA & BRIGHTNESS ===
+
+# Increase Volume (Custom Script)
+super + F12
+	~/.config/bspwm/scripts/changevolume up
+
+# Decrease Volume (Custom Script)
+super + F11
+	~/.config/bspwm/scripts/changevolume down
+
+# Toggle Mute (Custom Script)
+super + F10
+	~/.config/bspwm/scripts/changevolume mute
+
+# Dedicated Key for Volume Up
+XF86AudioRaiseVolume
+	~/.config/bspwm/scripts/changevolume up
+
+# Dedicated Key for Volume Down
+XF86AudioLowerVolume
+	~/.config/bspwm/scripts/changevolume down
+
+# Dedicated Key for Mute
+XF86AudioMute
+	~/.config/bspwm/scripts/changevolume mute
+
+# Increase Screen Brightness
+XF86MonBrightnessUp
+	xbacklight +10
+
+# Decrease Screen Brightness
+XF86MonBrightnessDown
+	xbacklight -10
+
+# === SCREENSHOTS ===
+
+# Take a Screenshot (Region Select)
+super + shift + s
+	flameshot gui --path ~/Screenshots/
+
+# Take a Fullscreen Screenshot
+super + s
+	flameshot full --path ~/Screenshots/

@@ -8,10 +8,10 @@ check_if_empty() {
 	[[ -z "$1" ]] && echo "0" || echo "$1"
 }
 
-KEY="0cf735452fe186dd8616fb133f07da"
-CITY="Allenstown"
+KEY="8e5ce2954f56c6d2cf3cfd5f0c4cdabc"
+CITY="Medan"
 CITYN=$(encode_to_url_format "$CITY")
-UNITS="imperial" # Available "metric" "imperial"
+UNITS="metric" # Available "metric" "imperial"
 WEATHER=$(curl -sf "api.openweathermap.org/data/2.5/weather?q=$CITYN&appid=$KEY&units=$UNITS")
 
 WEATHER_DESC=$(echo "$WEATHER" | jq -r ".weather[0].main")

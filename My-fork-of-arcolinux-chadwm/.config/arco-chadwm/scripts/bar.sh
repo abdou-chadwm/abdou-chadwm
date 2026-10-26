@@ -12,7 +12,7 @@ magenta="#c678dd"
 interval=0
 
 pkg_updates() {
-  updates=$(xbps-install -un 2>/dev/null | wc -l)
+  updates=$(LC_ALL=C apt list --upgradable 2>/dev/null | grep -c 'upgradable from')
   printf "^c$green^ 󰅢 ^c$white^$updates updates"
 }
 

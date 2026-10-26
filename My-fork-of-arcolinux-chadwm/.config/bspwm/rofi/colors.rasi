@@ -1,0 +1,16 @@
+/* Generated from wallpaper: wallhaven-lyq2rq_3440x1440.png */
+
+* {
+    bg:          #141a1f;
+    fg:          #d2c4bc;
+    accent:      #cb8e71;
+    accent-2:    #96b1cf;
+    border:      #cb8e71;
+    urgent:      #ca9d86;
+    selected-fg: #d2c4bc;
+    entry-fg:    #96b1cf;
+    prompt-fg:   #cb8e71;
+    header:      #96b1cf;
+
+    background-color: @bg;
+}

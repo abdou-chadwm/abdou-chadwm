@@ -21,12 +21,12 @@ function send_notification {
 case $1 in
   up)
     # increase the backlight by 5%
-    brightnessctl -d intel_backlight set 5%+
+    brightnessctl set "${BRIGHTNESS_STEPS:-5}%+" -q
     send_notification
     ;;
   down)
     # decrease the backlight by 5%
-    brightnessctl -d intel_backlight set 5%-
+    brightnessctl set "${BRIGHTNESS_STEPS:-5}%-" -q
     send_notification
     ;;
 esac

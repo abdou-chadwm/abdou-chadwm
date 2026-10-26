@@ -57,7 +57,9 @@ super + F12
 #################################################################
 # SUPER + ... KEYS
 #################################################################
-
+#Update   
+   super + u
+       alacritty -e ~/.config/arco-chadwm/scripts/update.sh
 #Geany
 super + e
     geany
@@ -151,7 +153,7 @@ super + shift + s
 
 # sxhkdrc
 super + shift + u
-    alacritty -e sudo xbps-install -Su
+    alacritty -e ~/.config/arco-chadwm/scripts/update.sh
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################

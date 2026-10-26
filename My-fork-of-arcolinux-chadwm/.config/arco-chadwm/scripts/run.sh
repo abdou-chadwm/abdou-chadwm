@@ -31,9 +31,12 @@ run "xautolock" -time 10 -locker blurlock
 # Input & Display
 sxhkd -c ~/.config/arco-chadwm/sxhkd/sxhkdrc &
 picom -b --config ~/.config/arco-chadwm/picom/picom.conf &
-run "nitrogen" --restore
-run "conky" -c "$HOME/.config/arco-chadwm/conky/system-overview"
-
+# Set the wallpaper first (not in the background) so conky's transparent
+# background copies the wallpaper instead of flashing black
+nitrogen --restore
+#run "conky" -c "$HOME/.config/arco-chadwm/conky/system-overview"
+(sleep 1 && conky -c ~/.config/arco-chadwm/conky/Auva-chadwm.conf) &
+(sleep 1 && conky -c ~/.config/arco-chadwm/conky/Auva2-chadwm.conf) &
 # --- 6. THE BAR & WINDOW MANAGER ---
 pkill bar.sh
 ~/.config/arco-chadwm/scripts/bar.sh &

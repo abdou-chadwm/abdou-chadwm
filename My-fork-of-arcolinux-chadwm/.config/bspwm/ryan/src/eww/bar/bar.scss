@@ -175,6 +175,35 @@
   }
 }
 
+.battery {
+  color: $green;
+  background-color: $bg-alt;
+  font-family: Iosevka Nerd Font;
+  font-size: 15px;
+  margin: 8px;
+  padding: 0px 9px;
+  border-radius: 18px;
+  .battery-icon {
+    margin-right: 2px;
+  }
+  &.low {
+    color: $watermelon;
+  }
+}
+
+.brightness {
+  color: $green;
+  background-color: $bg-alt;
+  font-family: Iosevka Nerd Font;
+  font-size: 15px;
+  margin: 8px;
+  padding: 0px 9px;
+  border-radius: 18px;
+  .brightness-icon {
+    margin-right: 2px;
+  }
+}
+
 .powerbutton {
   color: $watermelon;
   background-color: $bg-alt;
@@ -214,3 +243,6 @@
   font-weight: 500;
   padding: 0px 7px;
 }
+
+.battery .battery-icon { color: $green; }
+.battery.low .battery-icon { color: $watermelon; }

@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+# Terminate already running bar instances
+killall -q polybar
+# Wait until the processes have been shut down
+# while pgrep -x polybar >/dev/null; do sleep 1; done
+# Launch one bar per monitor. The primary goes first so it claims the
+# tray (only one can exist; the tray module on the others stays empty).
+config=~/.config/bspwm/polybar/config.ini
+monitors=$(polybar -m | cut -d: -f1)
+primary=$(polybar -m | awk -F: '/\(primary\)/ {print $1; exit}')
+[ -n "$primary" ] || primary=$(echo "$monitors" | head -n 1)
+MONITOR=$primary polybar -c "$config" &
+for m in $monitors; do
+    [ "$m" = "$primary" ] && continue
+    MONITOR=$m polybar -c "$config" &
+done

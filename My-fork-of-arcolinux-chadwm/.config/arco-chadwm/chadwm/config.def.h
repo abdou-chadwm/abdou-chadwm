@@ -90,7 +90,7 @@ static char *tags[] = { "", "", "", "", "", "", "", "", 
 
 static const char* chrome[] = { "google-chrome-stable", NULL };
 static const char* email[] = { "bluemail", NULL };
-static const char* eww[] = { "gtk-launch", "chrome-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop", NULL };
+static const char* eww[] = { "/opt/google/chrome/google-chrome", "--profile-directory=Default", "https://claude.ai/new", NULL };
 static const char* geany[] = { "geany", NULL };
 static const char* pcmanfm[] = { "pcmanfm", NULL };
 static const char* terminal[] = { "alacritty", NULL};

@@ -31,9 +31,9 @@
 ;(defpoll music_status :interval "1s" "~/.config/bspwm/ryan/src/eww/scripts/music/songdata.sh status")
 
 (defpoll completeday :interval "1s" "date '+%A, %d %B'")
-(defpoll lithour :interval "1s" "date +%H")
+(defpoll lithour :interval "1s" "date +%I")
 (defpoll litmin :interval "1s" "date +%M")
-(defpoll timeku :interval "1s" "date '+%H:%M %p'")
+(defpoll timeku :interval "1s" "date '+%I:%M %p'")
 (defpoll calendar_day :interval "11h" "date '+%d'")
 (defpoll calendar_month :interval "11h" "date '+%m")
 (defpoll calendar_year :interval "11h" "date '+%Y'")
@@ -57,3 +57,6 @@
 (defpoll get_updates   :interval "22h" "Updates --get-updates")
 (defpoll get_list_updates   :interval "22h" "Updates --get-list-updates")
 (defpoll print_updates   :interval "22h" "Updates --print-updates")
+
+(defpoll battery :interval "10s" "~/.config/bspwm/ryan/src/eww/scripts/battery.sh percentage")
+(defpoll battery_icon :interval "10s" "~/.config/bspwm/ryan/src/eww/scripts/battery.sh icon")

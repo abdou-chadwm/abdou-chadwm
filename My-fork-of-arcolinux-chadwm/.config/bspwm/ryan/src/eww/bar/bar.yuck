@@ -57,7 +57,7 @@
 
 (defwidget full []
   (button :style "background-image: url('/home/ryan/.config/bspwm/assets/fullscreen.svg');"
-  			  :class "trayicon" 
+  			  :class "trayicon"
           :onclick "buttonmin.sh"
           :tooltip "tiled"
   )
@@ -65,7 +65,7 @@
 
 ;(defwidget small []
 ;  (button :style "background-image: url('/home/ryan/.config/bspwm/assets/floating.svg');"
-;  			  :class "trayicon"          
+;  			  :class "trayicon"
 ;  	      :onclick "bspc node -t pseudo_tiled"
 ;          :tooltip "floating screen"
 ;  )
@@ -112,6 +112,29 @@
   )
 )
 
+(defwidget battery_module []
+  (box :class "battery ${battery < 20 ? 'low' : ''}"
+       :orientation "h"
+       :space-evenly false
+       :spacing 6
+    (label :class "battery-icon" :text battery_icon)
+    (label :class "battery-percent" :text "${battery}%")
+  )
+)
+
+(defwidget brightness_module []
+  (eventbox :onscroll "bash /home/abdou/.config/bspwm/scripts/Brightness {}"
+    (box :class "brightness"
+         :orientation "h"
+         :space-evenly false
+         :spacing 6
+         :tooltip "Brightness ${br}% (scroll to adjust)"
+      (label :class "brightness-icon" :text br_icon)
+      (label :class "brightness-percent" :text "${br}%")
+    )
+  )
+)
+
 (defwidget left []
   (box :class "left"
        :orientation "h"
@@ -145,6 +168,8 @@
     (tray)
     (clip)
     (update)
+    (brightness_module)
+    (battery_module)
     (actionsbox)
     (powerbutton)
   )
